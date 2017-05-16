@@ -14,7 +14,7 @@
 #define TI_TASK 16 /* offsetof(struct thread_info, task)	// */
 #define TI_CPU 28 /* offsetof(struct thread_info, cpu)	// */
 
-#define THREAD_CPU_CONTEXT 1936 /* offsetof(struct task_struct, thread.cpu_context)	// */
+#define THREAD_CPU_CONTEXT 1952 /* offsetof(struct task_struct, thread.cpu_context)	// */
 
 #define S_X0 0 /* offsetof(struct pt_regs, regs[0])	// */
 #define S_X1 8 /* offsetof(struct pt_regs, regs[1])	// */
@@ -32,9 +32,10 @@
 #define S_PC 256 /* offsetof(struct pt_regs, pc)	// */
 #define S_ORIG_X0 272 /* offsetof(struct pt_regs, orig_x0)	// */
 #define S_SYSCALLNO 280 /* offsetof(struct pt_regs, syscallno)	// */
-#define S_FRAME_SIZE 288 /* sizeof(struct pt_regs)	// */
+#define S_ORIG_ADDR_LIMIT 288 /* offsetof(struct pt_regs, orig_addr_limit)	// */
+#define S_FRAME_SIZE 304 /* sizeof(struct pt_regs)	// */
 
-#define MM_CONTEXT_ID 696 /* offsetof(struct mm_struct, context.id.counter)	// */
+#define MM_CONTEXT_ID 712 /* offsetof(struct mm_struct, context.id.counter)	// */
 
 #define VMA_VM_MM 64 /* offsetof(struct vm_area_struct, vm_mm)	// */
 #define VMA_VM_FLAGS 80 /* offsetof(struct vm_area_struct, vm_flags)	// */

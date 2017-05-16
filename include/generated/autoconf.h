@@ -1,7 +1,7 @@
 /*
  *
  * Automatically generated file; DO NOT EDIT.
- * Linux/arm64 4.4.13 Kernel Configuration
+ * Linux/arm64 4.4.67 Kernel Configuration
  *
  */
 #define CONFIG_RING_BUFFER 1
@@ -986,6 +986,7 @@
 #define CONFIG_DEFAULT_MPTCP_PM "default"
 #define CONFIG_GPS_BCM4773 1
 #define CONFIG_USB_NET_CDC_MBIM 1
+#define CONFIG_CAVIUM_ERRATUM_27456 1
 #define CONFIG_PSTORE_RAM 1
 #define CONFIG_CPU_FREQ_STAT 1
 #define CONFIG_BCMDHD_OOB_HOST_WAKE 1
